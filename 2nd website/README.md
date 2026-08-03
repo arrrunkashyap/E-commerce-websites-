@@ -1,7 +1,6 @@
 # Simple E-Commerce Website
 
 A beginner-level e-commerce website built using HTML, CSS, and JavaScript.
-
 ## Features
 
 - Product listing
