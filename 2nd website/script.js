@@ -1,6 +1,5 @@
 let cart = [];
 let total = 0;
-
 function addToCart(name, price){
 
     cart.push({name, price});
