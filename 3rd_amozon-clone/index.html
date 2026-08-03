@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <img src="images/logo.jpg" alt="ShopEase Logo">
+        </div>
+
+        <div class="search-box">
+            <input type="text" id="search" placeholder="Search Products...">
+            <button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+
+        <div class="nav-icons">
+
+            <a href="#">
+                <i class="fa-solid fa-user"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-heart"></i>
+            </a>
+
+            <a href="cart.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>0</span>
+            </a>
+
+        </div>
+
+    </nav>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+        <div class="hero-text">
+
+            <h1>Big Sale is Live</h1>
+
+            <p>Up to 50% OFF on Electronics & Fashion</p>
+
+            <button>Shop Now</button>
+
+        </div>
+
+    </section>
+
+    <!-- ================= PRODUCTS ================= -->
+
+    <section class="products">
+
+        <h2>Featured Products</h2>
+
+        <div class="product-grid" id="productGrid">
+
+            <!-- Product 1 -->
+            <div class="card">
+                <img src="images/products/laptop.jpg" alt="Laptop">
+                <h3>Laptop</h3>
+                <p>₹54,999</p>
+                <button onclick="addToCart('Laptop',54999)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="card">
+                <img src="images/products/phone.jpg" alt="Phone">
+                <h3>Smart Phone</h3>
+                <p>₹19,999</p>
+                <button onclick="addToCart('Smart Phone',19999)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="card">
+                <img src="images/products/watch.jpg" alt="Watch">
+                <h3>Smart Watch</h3>
+                <p>₹3,499</p>
+                <button onclick="addToCart('Smart Watch',3499)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="card">
+                <img src="images/products/shoes.jpg" alt="Shoes">
+                <h3>Sports Shoes</h3>
+                <p>₹2,299</p>
+                <button onclick="addToCart('Sports Shoes',2299)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="card">
+                <img src="images/products/headphone.jpg" alt="Headphones">
+                <h3>Headphones</h3>
+                <p>₹2,999</p>
+                <button onclick="addToCart('Headphones',2999)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="card">
+                <img src="images/products/bag.jpg" alt="Bag">
+                <h3>Backpack</h3>
+                <p>₹1,299</p>
+                <button onclick="addToCart('Backpack',1299)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <!-- Product 7 -->
+            <div class="card">
+                <img src="image/products/camera.jpg">
+                <h3>Camera</h3>
+                <p>₹45,999</p>
+                <button onclick="addToCart('Camera',45999)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <!-- Product 8 -->
+            <div class="card">
+                <img src="images/products/laptop.jpg" alt="Gaming Laptop">
+                <h3>Gaming Laptop</h3>
+                <p>₹89,999</p>
+                <button onclick="addToCart('Gaming Laptop',89999)">
+                    Add to Cart
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>&copy; 2026 ShopEase. All Rights Reserved.</p>
+
+    </footer>
+
+    <script src="script.js"></script>
+    <div id="toast"></div>
+
+</body>
+</html>
