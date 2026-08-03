@@ -4,7 +4,6 @@ let total = 0;
 function addToCart(name, price){
 
     cart.push({name, price});
-
     total += price;
 
     document.getElementById("count").innerText = cart.length;
